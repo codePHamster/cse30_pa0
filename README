@@ -1,0 +1,7 @@
+Bugs found in pa0.c
+1. Line 47 ; at the end of the line in pa0.c
+2. Missing } for main in pa0.c
+
+3. include <stdio.h> in printInOrder.c
+5.
+
