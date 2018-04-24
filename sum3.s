@@ -45,7 +45,7 @@
 	add	r3, r3, r2		@ Add previous result with param3 result
 					@ into r3
 
-	mov	r3, r0			@ Put return value in r0
+	mov	r0, r3			@ Put return value in r0
 
 	@ Standard epilogue
 	sub	sp, fp, FP_OFFSET	@ Set sp to top of saved registers

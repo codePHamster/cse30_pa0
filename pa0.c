@@ -1,12 +1,11 @@
 /*
  * Filename: pa0.c
- * Author: TODO: Enter your name
- * Userid: TODO: Enter your cse30 login id
+ * Author: Kim Pham
+ * Userid: cs30xod@ucsd.edu
  * Description: Main driver for PA0, will print out an array three times and
  *              calculate the sum of three numbers
- * Date: TODO: Enter the date you first modified this file
- * Sources of Help: TODO: List all the people, books, websites, etc. that you
- *                  used to help you write the code in this source file.
+ * Date: Apr 08 2018
+ * Sources of Help: none
  */
 
 #include <stdio.h>
@@ -62,7 +61,7 @@ int main( void ) {
   sum = sum3( v1, v2, v3 );
 
   // Print out the three original numbers and the resulting sum
-  printf( "The sum of %d + %d + %d = %d\n", v1, v1, v1, sum );
+  printf( "The sum of %d + %d + %d = %d\n", v1, v2, v3, sum );
 
   return EXIT_SUCCESS;
 }

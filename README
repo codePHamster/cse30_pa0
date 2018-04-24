@@ -4,7 +4,7 @@
 * Userid: cs30xod
 * Description: to explain in details of pa0
 * Date: Apr 10 2018
-* Sources of Help: Shanfeng Feng, Thant Zaw
+* Sources of Help: Shanfeng Feng, Thant Zaw, Christoph Steefel, Zhimin Lin
 */
 
 ----------------------------DESCRIPTION---------------------------------------
@@ -142,7 +142,8 @@ The decimal value of the hexadecimal number stored at that address is 0x1d
 0x7efffb3c is r11 (frame pointer) 
 and 0x000105cc is link register
 
-12. The value 0x00105cc points to line 192 instruction in main
+12. The value 0x00105cc points to an instruction, particularly one that stores
+register 
 
 13. A break point is a pausing place in a program intended for debugging. There
 are multiple ways to set a breakpoint, but normally I use 'break <function>'
@@ -153,13 +154,30 @@ to set a break at a function.
 it means you are debugging function foobar
 
 15. Step vs next:
-'step' executes until another line reached. It means that if that line happens 
+-'step' executes until another line reached. It means that if that line happens 
 to be a function call, step will go into that function.
-'stepi' is like step but by machine instructions rather than source lines
-'next' executes next line. Again, if that line happens to be a function call, 
+-'stepi' is like step but by machine instructions rather than source lines
+-'next' executes next line. Again, if that line happens to be a function call, 
 next will execute that function.
-'nexti' is like next but by machine instructions rather than source lines
+-'nexti' is like next but by machine instructions rather than source lines
 
 16. $r0, $r1, etc refer to the register values
 
-17. 
+17. Given an integer number n, to print out its corresponding ASCII character,
+simply do 'printf("%c",n);'
+
+18. Given an integer number n in decimal form, to print out its corresponding 
+-hexadecimal form without leading 0x, do printf("%x",n);
+-hexadecimal form with leading 0x, printf("%#X", n);
+-octal form without leading 0, do printf("%o", n);
+-octal form with leading 0, do printf("%#o", n);
+
+19. fprintf(stderr, "%s %d %c %.1f", rocks, value, plus, thirty);
+
+20. printf(
+"The size of char is: %3d\n
+The size of short is: %3d\n
+The size of int is: %3d\n
+The size of long is: %3d\n
+The size of float is: %3d\n", 
+sizeof(char), sizeof(short), sizeof(int), sizeof(long), sizeof(float));
