@@ -1,0 +1,64 @@
+Grader: cs30x16@ieng6.ucsd.edu
+Student: cs30xod
+
+TOTAL [100] 95
+
+README [10]: 10
+  High-level description [-2]: 0
+  How to compile and run [-2]: 0
+  Normal output w/ example [-2]: 0
+  Abnormal output w/ example [-2]: 0
+  How tested [-2]: 0
+Comment: [How tested] For future PAs, remember to describe specific test cases as
+well. 
+
+COMPILING [5]: 5
+  Compiler Warnings (-1 per warning) [-5]: 0
+Comments: No compiler warnings
+
+STYLE [20]: 19.5
+  File Headers -0.5
+  Function Headers 0
+Comments 
+  Magic Numbers (-0.5 per) 0
+  Variable Names 0
+  Use of whitespace 0
+  80 Chars Per Line 0
+  Misc 0
+Comments: [File headers] For Userid, do not include "@ucsd.edu". Missing sources of
+help in sum3.s.
+
+CORRECTNESS [65]: 60.5
+  01 initArray [-3]: 0
+  02 printReversed intArray [-3]: 0
+  03 printInOrder intArray [-3]: 0
+  04 sum LHS [-3]: 0
+  05 sum RHS [-3]: 0
+  Q0 Academic Integrity [-2]: 0
+  Q1 Compilation errors and warning w/ fixes [-4]: -1
+  Q2 Runtime error fixes [-5]: -0.5
+  Q3 What line is seen [-2]: 0
+  Q4 What happens nexti and why [-2]: -1
+  Q5 What function? [-2]: 0
+  Q6 Value of r3 [-2]: 0
+  Q7 New value of r3 [-2]: 0
+  Q8 Value of r1 and printing [-2]: -1
+  Q9 What variable? [-2]: 0
+  Q10 Address last element/Decimal Value [-2]: -1
+  Q11 Name stack values [-2]: 0
+  Q12 What does value point to? [-2]: 0
+  Q13 Breakpoint/How set [-2]: 0
+  Q14 What function [-2]: 0
+  Q15 Diff between step/next and [s|n]/[s|n]i [-2]: 0
+  Q16 What are registers [-2]: 0
+  Q17 Print integer as ascii [-2]: 0
+  Q18 Print decimal in hex and octal [-2]: 0
+  Q19 Print line of code to stderr [-2]: 0
+  Q20 Print line of code to stdout [-5]: 0
+  Wrong language (-10 per file): 0
+  Misc: 0
+Comments: Passed all test cases. [Q1] Did not mention fixing "stdout undeclared".
+[Q2] Missing line number for first fix. [Q4] Please describe what happens more
+specifically to your program. [Q8] "p" and "print" are the same command. Another way
+to print the value of r1 is "i r" or "i r $r1". [Q10] The decimal value of 0x1d is
+29. [Q12] The section of memory that contains instructions is the text section. 
